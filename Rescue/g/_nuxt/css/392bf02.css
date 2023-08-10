@@ -1,0 +1,1130 @@
+.kib-banner {
+    display: block;
+    height: 29.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64.8rem;
+    overflow: hidden;
+    position: relative
+}
+
+.kib-banner:focus {
+    box-shadow: 0 0 0 .2rem #1c49c2;
+    outline: none
+}
+
+@media(min-width:40.5em)and (max-width:64em) {
+    .kib-banner {
+        max-width: 104rem
+    }
+}
+
+@media(min-width:64.0625em) {
+    .kib-banner {
+        max-width: 144rem
+    }
+}
+
+.kib-banner--style-1 .kib-banner__header {
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    line-height: 2.5rem
+}
+
+.kib-banner--style-1 .kib-banner__subheader {
+    font-family: Work Sans, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: -.03em;
+    line-height: 1.8rem
+}
+
+.kib-banner--style-2 .kib-banner__header {
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: .01em;
+    line-height: 3.5rem
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--style-2 .kib-banner__header {
+        font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+        font-size: 4rem;
+        font-weight: 500;
+        letter-spacing: .01em;
+        line-height: 5rem
+    }
+}
+
+.kib-banner--style-2 .kib-banner__subheader {
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+    line-height: 2rem
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--style-2 .kib-banner__subheader {
+        font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: .01em;
+        line-height: 2.5rem
+    }
+}
+
+.kib-banner--style-3 .kib-banner__header {
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    line-height: 3.5rem
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--style-3 .kib-banner__header {
+        font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: .01em;
+        line-height: 5rem
+    }
+}
+
+.kib-banner--style-3 .kib-banner__subheader {
+    font-family: Work Sans, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: -.03em;
+    line-height: 1.8rem
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--style-3 .kib-banner__subheader {
+        font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: .01em;
+        line-height: 2.5rem
+    }
+}
+
+.kib-banner--style-4 .kib-banner__header {
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .01em;
+    line-height: 2.5rem
+}
+
+.kib-banner--style-4 .kib-banner__subheader {
+    font-family: Work Sans, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: -.03em;
+    line-height: 1.8rem
+}
+
+.kib-banner--tall {
+    height: 40rem
+}
+
+.kib-banner--short {
+    height: 12.8rem
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--short {
+        height: 16.8rem
+    }
+}
+
+.kib-banner__wrapper {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.kib-banner--align-start .kib-banner__wrapper {
+    justify-content: flex-start
+}
+
+.kib-banner--align-center .kib-banner__wrapper {
+    justify-content: center
+}
+
+.kib-banner--align-end .kib-banner__wrapper {
+    justify-content: flex-start
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--align-end .kib-banner__wrapper {
+        justify-content: flex-end
+    }
+}
+
+.kib-banner__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.kib-banner__header {
+    margin: 0;
+    padding: 0
+}
+
+.kib-banner--light .kib-banner__header {
+    color: #121212
+}
+
+.kib-banner--dark .kib-banner__header {
+    color: #fff
+}
+
+.kib-banner__subheader {
+    margin-bottom: 0;
+    margin-top: .8rem
+}
+
+.kib-banner--light .kib-banner__subheader {
+    color: #4d4d4d
+}
+
+.kib-banner--dark .kib-banner__subheader {
+    color: #eee
+}
+
+.kib-banner__text {
+    box-sizing: border-box;
+    max-height: 100%;
+    width: 20.8rem
+}
+
+@media(min-width:40.5em)and (max-width:64em) {
+    .kib-banner__text {
+        width: 31.6rem
+    }
+}
+
+@media(min-width:64.0625em) {
+    .kib-banner__text {
+        width: 44rem
+    }
+}
+
+.kib-banner--align-start .kib-banner__text {
+    margin-left: 1.6rem
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--align-start .kib-banner__text {
+        margin-left: 5.2rem
+    }
+}
+
+.kib-banner--align-center .kib-banner__text {
+    justify-content: center;
+    text-align: center
+}
+
+.kib-banner--align-end .kib-banner__text {
+    margin-left: 1.6rem
+}
+
+@media(min-width:40.5em) {
+    .kib-banner--align-end .kib-banner__text {
+        margin-right: 5.2rem
+    }
+}
+
+.kib-banner__actions {
+    margin-top: 1.6rem
+}
+
+.kib-button-default {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #1c49c2;
+    border: 0;
+    border-radius: 4rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 4.8rem;
+    justify-content: center;
+    letter-spacing: .02em;
+    line-height: 2rem;
+    padding: 0 4rem;
+    position: relative;
+    text-decoration: none;
+    touch-action: manipulation;
+    transform: translate(0);
+    transition: background-color .1s ease-out;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.kib-button-default:after {
+    border: .2rem solid;
+    border-radius: 4.4rem;
+    bottom: -.4rem;
+    color: inherit;
+    content: "";
+    left: -.4rem;
+    opacity: 0;
+    position: absolute;
+    right: -.4rem;
+    top: -.4rem;
+    transition: opacity .1s ease-out;
+    z-index: -1
+}
+
+.kib-button-default+.kib-button-default {
+    margin-left: .8rem
+}
+
+.kib-button-default:after {
+    border-color: #11389e
+}
+
+.kib-button-default:focus {
+    background-color: #11389e;
+    outline: 0
+}
+
+.kib-button-default:focus:after {
+    opacity: 1
+}
+
+.kib-button-default:hover {
+    background-color: #2661ce;
+    color: #fff;
+    text-decoration: none
+}
+
+.kib-button-default:active {
+    background-color: #031657
+}
+
+.kib-button-default--disabled,
+.kib-button-default:disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+.kib-button-default:hover:focus:after {
+    opacity: 0
+}
+
+.kib-button-default--loading,
+.kib-button-default--loading:active,
+.kib-button-default--loading:focus,
+.kib-button-default--loading:hover {
+    background-color: #031657
+}
+
+.kib-button-default--secondary {
+    box-shadow: inset 0 0 0 .2rem currentColor;
+    color: #1c49c2
+}
+
+.kib-button-default--secondary,
+.kib-button-default--secondary:focus {
+    background-color: transparent;
+    background-color: initial
+}
+
+.kib-button-default--secondary:hover {
+    background-color: #dbebf9;
+    color: #1c49c2
+}
+
+.kib-button-default--secondary:active {
+    background-color: #b8d7f3
+}
+
+.kib-button-default--secondary.kib-button-default--splash {
+    background-color: var(--splash-background);
+    box-shadow: inset 0 0 0 .2rem var(--splash-border);
+    color: var(--splash-text-color)
+}
+
+.kib-button-default--secondary.kib-button-default--splash:after {
+    border-color: var(--splash-border)
+}
+
+.kib-button-default--secondary.kib-button-default--splash:focus {
+    background-color: var(--splash-background-focus)
+}
+
+.kib-button-default--secondary.kib-button-default--splash:hover {
+    background-color: var(--splash-background-hover);
+    color: var(--splash-text-color)
+}
+
+.kib-button-default--secondary.kib-button-default--splash:active {
+    background-color: var(--splash-background-active)
+}
+
+.kib-button-default--secondary.kib-button-default--loading,
+.kib-button-default--secondary.kib-button-default--loading:active,
+.kib-button-default--secondary.kib-button-default--loading:focus,
+.kib-button-default--secondary.kib-button-default--loading:hover {
+    background-color: #b8d7f3
+}
+
+.kib-button-default--danger {
+    background-color: #bc2848
+}
+
+.kib-button-default--danger:after {
+    border-color: #bc2848
+}
+
+.kib-button-default--danger:focus {
+    background-color: #bc2848
+}
+
+.kib-button-default--danger:hover {
+    background-color: #d12e4b
+}
+
+.kib-button-default--danger.kib-button-default--loading,
+.kib-button-default--danger.kib-button-default--loading:active,
+.kib-button-default--danger.kib-button-default--loading:focus,
+.kib-button-default--danger.kib-button-default--loading:hover,
+.kib-button-default--danger:active {
+    background-color: #851940
+}
+
+.kib-button-default--danger.kib-button-default--secondary {
+    background-color: transparent;
+    background-color: initial;
+    color: #bc2848
+}
+
+.kib-button-default--danger.kib-button-default--secondary:hover {
+    background-color: #fde4e8
+}
+
+.kib-button-default--danger.kib-button-default--secondary.kib-button-default--loading,
+.kib-button-default--danger.kib-button-default--secondary.kib-button-default--loading:active,
+.kib-button-default--danger.kib-button-default--secondary.kib-button-default--loading:focus,
+.kib-button-default--danger.kib-button-default--secondary.kib-button-default--loading:hover,
+.kib-button-default--danger.kib-button-default--secondary:active {
+    background-color: #f9bbc7;
+    color: #851940
+}
+
+.kib-button-default--transactional {
+    background-color: #ef6c00
+}
+
+.kib-button-default--transactional:after {
+    border-color: #ef6c00
+}
+
+.kib-button-default--transactional:focus {
+    background-color: #ef6c00
+}
+
+.kib-button-default--transactional:hover {
+    background-color: #f17b1a
+}
+
+.kib-button-default--transactional.kib-button-default--loading,
+.kib-button-default--transactional.kib-button-default--loading:active,
+.kib-button-default--transactional.kib-button-default--loading:focus,
+.kib-button-default--transactional.kib-button-default--loading:hover,
+.kib-button-default--transactional:active {
+    background-color: #d76100
+}
+
+.kib-button-default--full {
+    display: flex;
+    width: 100%
+}
+
+.kib-button-default--full+.kib-button-default--full {
+    margin-left: 0;
+    margin-top: .8rem
+}
+
+.kib-button-default--has-icon__icon {
+    display: inline-block;
+    flex-shrink: 0;
+    height: 2.4rem;
+    vertical-align: middle;
+    width: 2.4rem
+}
+
+.kib-button-default--has-icon__icon:not(:only-child) {
+    margin-right: .8rem
+}
+
+.kib-button-default--has-icon__icon>svg {
+    fill: currentColor
+}
+
+.kib-button-default--splash {
+    background-color: var(--splash-background);
+    color: var(--splash-text-color)
+}
+
+.kib-button-default--splash:after {
+    border-color: var(--splash-background)
+}
+
+.kib-button-default--splash:focus {
+    background-color: var(--splash-background-focus)
+}
+
+.kib-button-default--splash:hover {
+    background-color: var(--splash-background-hover);
+    color: var(--splash-text-color)
+}
+
+.kib-button-default--splash:active {
+    background-color: var(--splash-background-active)
+}
+
+:root {
+    --kib-button-text-color: #fff;
+    --kib-button-background: #1c49c2;
+    --kib-button-focus-border-color: #1c49c2;
+    --kib-button-box-shadow-color: none
+}
+
+.kib-button-new {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #1c49c2;
+    background-color: var(--kib-button-background);
+    border: 0;
+    border-radius: 2.4rem;
+    box-shadow: none;
+    box-shadow: inset 0 0 0 .2rem none;
+    box-shadow: inset 0 0 0 .2rem var(--kib-button-box-shadow-color);
+    color: #fff;
+    color: var(--kib-button-text-color);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 4.8rem;
+    justify-content: center;
+    letter-spacing: .02em;
+    line-height: 2rem;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    position: relative;
+    text-decoration: none;
+    touch-action: manipulation;
+    transform: translate(0);
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.kib-button-new+.kib-button-new {
+    margin-left: .8rem
+}
+
+.kib-button-new:disabled {
+    opacity: .5;
+    pointer-events: none
+}
+
+.kib-button-new:hover {
+    --kib-button-background: #2661ce
+}
+
+.kib-button-new--loading,
+.kib-button-new:active {
+    --kib-button-background: #031657
+}
+
+.kib-button-new--loading,
+.kib-button-new:active,
+.kib-button-new:hover {
+    color: #fff;
+    color: var(--kib-button-text-color);
+    text-decoration: none
+}
+
+.kib-button-new--loading {
+    opacity: .5
+}
+
+.kib-button-new:after {
+    border: .2rem solid #1c49c2;
+    border: .2rem solid var(--kib-button-focus-border-color);
+    border-radius: 2.8rem;
+    bottom: -.4rem;
+    color: inherit;
+    content: "";
+    left: -.4rem;
+    opacity: 0;
+    position: absolute;
+    right: -.4rem;
+    top: -.4rem;
+    transition: opacity .1s ease-out;
+    z-index: -1
+}
+
+.kib-button-new:focus {
+    outline: 0
+}
+
+.kib-button-new:focus:after {
+    opacity: 1
+}
+
+.kib-button-new:hover:focus:after {
+    opacity: 0
+}
+
+.kib-button-new--medium {
+    height: 4rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem
+}
+
+.kib-button-new--small {
+    height: 3.2rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem
+}
+
+.kib-button-new--secondary {
+    --kib-button-box-shadow-color: #1c49c2;
+    --kib-button-focus-border-color: #1c49c2;
+    --kib-button-background: #fff;
+    --kib-button-text-color: #1c49c2
+}
+
+.kib-button-new--secondary:hover {
+    --kib-button-text-color: #1c49c2;
+    --kib-button-background: #dbebf9
+}
+
+.kib-button-new--secondary--loading,
+.kib-button-new--secondary:active {
+    --kib-button-background: #b8d7f3
+}
+
+.kib-button-new--secondary--loading {
+    opacity: .5
+}
+
+.kib-button-new--tertiary {
+    --kib-button-box-shadow-color: #dbebf9;
+    --kib-button-focus-border-color: #1c49c2;
+    --kib-button-background: #fff;
+    --kib-button-text-color: #1c49c2
+}
+
+.kib-button-new--tertiary:hover {
+    --kib-button-text-color: #1c49c2;
+    --kib-button-background: #dbebf9;
+    box-shadow: none
+}
+
+.kib-button-new--tertiary--loading,
+.kib-button-new--tertiary:active {
+    --kib-button-background: #b8d7f3;
+    box-shadow: none
+}
+
+.kib-button-new--tertiary--loading {
+    opacity: .5
+}
+
+.kib-button-new--utility {
+    --kib-button-box-shadow-color: none;
+    --kib-button-focus-border-color: #4d4d4d;
+    --kib-button-background: #4d4d4d;
+    --kib-button-text-color: #fff
+}
+
+.kib-button-new--utility:hover {
+    --kib-button-text-color: #fff;
+    --kib-button-background: #666
+}
+
+.kib-button-new--utility--loading,
+.kib-button-new--utility:active {
+    --kib-button-background: #121212
+}
+
+.kib-button-new--utility--loading {
+    opacity: .5
+}
+
+.kib-button-new--utility.kib-button-new--secondary {
+    --kib-button-box-shadow-color: #4d4d4d;
+    --kib-button-focus-border-color: #4d4d4d;
+    --kib-button-background: #fff;
+    --kib-button-text-color: #4d4d4d
+}
+
+.kib-button-new--utility.kib-button-new--secondary:hover {
+    --kib-button-text-color: #4d4d4d;
+    --kib-button-background: #eee
+}
+
+.kib-button-new--utility.kib-button-new--secondary--loading,
+.kib-button-new--utility.kib-button-new--secondary:active {
+    --kib-button-background: #ccc
+}
+
+.kib-button-new--utility.kib-button-new--secondary--loading {
+    opacity: .5
+}
+
+.kib-button-new--utility.kib-button-new--tertiary {
+    --kib-button-box-shadow-color: #eee;
+    --kib-button-focus-border-color: #4d4d4d;
+    --kib-button-background: #fff;
+    --kib-button-text-color: #4d4d4d
+}
+
+.kib-button-new--utility.kib-button-new--tertiary:hover {
+    --kib-button-text-color: #4d4d4d;
+    --kib-button-background: #eee;
+    box-shadow: none
+}
+
+.kib-button-new--utility.kib-button-new--tertiary--loading,
+.kib-button-new--utility.kib-button-new--tertiary:active {
+    --kib-button-background: #ccc;
+    box-shadow: none
+}
+
+.kib-button-new--utility.kib-button-new--tertiary--loading {
+    opacity: .5
+}
+
+.kib-button-new--destructive {
+    --kib-button-box-shadow-color: none;
+    --kib-button-focus-border-color: #bc2848;
+    --kib-button-background: #bc2848;
+    --kib-button-text-color: #fff
+}
+
+.kib-button-new--destructive:hover {
+    --kib-button-text-color: #fff;
+    --kib-button-background: #d12e4b
+}
+
+.kib-button-new--destructive--loading,
+.kib-button-new--destructive:active {
+    --kib-button-background: #851940
+}
+
+.kib-button-new--destructive--loading {
+    opacity: .5
+}
+
+.kib-button-new--destructive.kib-button-new--secondary {
+    --kib-button-box-shadow-color: #bc2848;
+    --kib-button-focus-border-color: #bc2848;
+    --kib-button-background: #fff;
+    --kib-button-text-color: #bc2848
+}
+
+.kib-button-new--destructive.kib-button-new--secondary:hover {
+    --kib-button-text-color: #bc2848;
+    --kib-button-background: #fde4e8
+}
+
+.kib-button-new--destructive.kib-button-new--secondary--loading,
+.kib-button-new--destructive.kib-button-new--secondary:active {
+    --kib-button-background: #f9bbc7
+}
+
+.kib-button-new--destructive.kib-button-new--secondary--loading {
+    opacity: .5
+}
+
+.kib-button-new--destructive.kib-button-new--tertiary {
+    --kib-button-box-shadow-color: #fde4e8;
+    --kib-button-focus-border-color: #bc2848;
+    --kib-button-background: #fff;
+    --kib-button-text-color: #bc2848
+}
+
+.kib-button-new--destructive.kib-button-new--tertiary:hover {
+    --kib-button-text-color: #bc2848;
+    --kib-button-background: #fde4e8;
+    box-shadow: none
+}
+
+.kib-button-new--destructive.kib-button-new--tertiary--loading,
+.kib-button-new--destructive.kib-button-new--tertiary:active {
+    --kib-button-background: #f9bbc7;
+    box-shadow: none
+}
+
+.kib-button-new--destructive.kib-button-new--tertiary--loading {
+    opacity: .5
+}
+
+.kib-button-new--transactional {
+    --kib-button-box-shadow-color: none;
+    --kib-button-focus-border-color: #ef6c00;
+    --kib-button-background: #ef6c00;
+    --kib-button-text-color: #fff
+}
+
+.kib-button-new--transactional:hover {
+    --kib-button-text-color: #fff;
+    --kib-button-background: #f17b1a
+}
+
+.kib-button-new--transactional--loading,
+.kib-button-new--transactional:active {
+    --kib-button-background: #d76100
+}
+
+.kib-button-new--transactional--loading {
+    opacity: .5
+}
+
+.kib-button-new__icon {
+    display: inline-block;
+    flex-shrink: 0;
+    height: 2.4rem;
+    margin-right: .8rem;
+    vertical-align: middle;
+    width: 2.4rem
+}
+
+.kib-button-new__icon>svg {
+    fill: currentColor
+}
+
+.kib-button-new__icon>:only-child {
+    height: inherit;
+    width: inherit
+}
+
+.kib-button-new--medium .kib-button-new__icon {
+    height: 2rem;
+    width: 2rem
+}
+
+.kib-button-new--small .kib-button-new__icon {
+    height: 1.6rem;
+    width: 1.6rem
+}
+
+.kib-button-new__icon--end {
+    margin-left: .8rem;
+    margin-right: 0
+}
+
+.kib-button-new--icon-only .kib-button-new__icon {
+    margin: 0
+}
+
+.kib-button-new--icon-only {
+    padding: 1.2rem
+}
+
+.kib-button-new--icon-only.kib-button-new--medium {
+    padding: 1rem
+}
+
+.kib-button-new--icon-only.kib-button-new--small {
+    padding: .8rem
+}
+
+.kib-button-new--icon-only .kib-button-new__label {
+    clip: rect(0 0 0 0);
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.kib-button-small {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #1c49c2;
+    border: 0;
+    border-radius: 4rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Poppins, Noto Sans, Franklin Gothic Medium, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 4.8rem;
+    height: 4rem;
+    justify-content: center;
+    letter-spacing: .02em;
+    line-height: 2rem;
+    padding: 0 1.2rem;
+    position: relative;
+    text-decoration: none;
+    touch-action: manipulation;
+    transform: translate(0);
+    transition: background-color .1s ease-out;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.kib-button-small:after {
+    border: .2rem solid;
+    border-radius: 4.4rem;
+    bottom: -.4rem;
+    color: inherit;
+    content: "";
+    left: -.4rem;
+    opacity: 0;
+    position: absolute;
+    right: -.4rem;
+    top: -.4rem;
+    transition: opacity .1s ease-out;
+    z-index: -1
+}
+
+.kib-button-small+.kib-button-small {
+    margin-left: .8rem
+}
+
+.kib-button-small:after {
+    border-color: #1c49c2
+}
+
+.kib-button-small:focus {
+    background-color: #11389e;
+    outline: 0
+}
+
+.kib-button-small:focus:after {
+    opacity: 1
+}
+
+@media(hover:hover) {
+    .kib-button-small:hover {
+        background-color: #2661ce;
+        color: #fff;
+        text-decoration: none
+    }
+}
+
+.kib-button-small:active {
+    background-color: #000833
+}
+
+.kib-button-small--disabled,
+.kib-button-small[disabled] {
+    opacity: .5;
+    pointer-events: none
+}
+
+.kib-button-small:hover:focus:after {
+    opacity: 0
+}
+
+.kib-button-small--loading,
+.kib-button-small--loading:focus,
+.kib-button-small--loading:hover {
+    background-color: #000833
+}
+
+.kib-button-small--secondary {
+    box-shadow: inset 0 0 0 .2rem currentColor;
+    color: #1c49c2
+}
+
+.kib-button-small--secondary,
+.kib-button-small--secondary:focus {
+    background-color: transparent;
+    background-color: initial
+}
+
+.kib-button-small--secondary:hover {
+    background-color: #dbebf9;
+    color: #1c49c2
+}
+
+.kib-button-small--secondary.kib-button-small--loading,
+.kib-button-small--secondary.kib-button-small--loading:focus,
+.kib-button-small--secondary.kib-button-small--loading:hover,
+.kib-button-small--secondary:active {
+    background-color: #b8d7f3
+}
+
+.kib-button-small--secondary.kib-button-small--splash {
+    background-color: var(--splash-background);
+    box-shadow: inset 0 0 0 .2rem var(--splash-border);
+    color: var(--splash-text-color)
+}
+
+.kib-button-small--secondary.kib-button-small--splash:after {
+    border-color: var(--splash-border)
+}
+
+.kib-button-small--secondary.kib-button-small--splash:focus {
+    background-color: var(--splash-background-focus)
+}
+
+.kib-button-small--secondary.kib-button-small--splash:hover {
+    background-color: var(--splash-background-hover);
+    color: var(--splash-text-color)
+}
+
+.kib-button-small--secondary.kib-button-small--splash:active {
+    background-color: var(--splash-background-active)
+}
+
+.kib-button-small--tertiary {
+    color: #1c49c2
+}
+
+.kib-button-small--tertiary,
+.kib-button-small--tertiary:focus {
+    background-color: transparent;
+    background-color: initial
+}
+
+@media(hover:hover) {
+    .kib-button-small--tertiary:hover {
+        background-color: #dbebf9;
+        color: #1c49c2
+    }
+}
+
+.kib-button-small--tertiary.kib-button-small--loading,
+.kib-button-small--tertiary.kib-button-small--loading:focus,
+.kib-button-small--tertiary.kib-button-small--loading:hover,
+.kib-button-small--tertiary:active {
+    background-color: #b8d7f3
+}
+
+.kib-button-small--transactional {
+    background-color: #ef6c00
+}
+
+.kib-button-small--transactional:after {
+    border-color: #ef6c00
+}
+
+.kib-button-small--transactional:focus {
+    background-color: #ef6c00
+}
+
+.kib-button-small--transactional:hover {
+    background-color: #f17b1a
+}
+
+.kib-button-small--transactional.kib-button-small--loading,
+.kib-button-small--transactional.kib-button-small--loading:focus,
+.kib-button-small--transactional.kib-button-small--loading:hover,
+.kib-button-small--transactional:active {
+    background-color: #d76100
+}
+
+.kib-button-small--neutral {
+    color: #4d4d4d
+}
+
+.kib-button-small--neutral,
+.kib-button-small--neutral:focus {
+    background-color: transparent;
+    background-color: initial
+}
+
+.kib-button-small--neutral:hover {
+    background-color: #eee;
+    color: #4d4d4d
+}
+
+.kib-button-small--neutral.kib-button-small--loading,
+.kib-button-small--neutral.kib-button-small--loading:focus,
+.kib-button-small--neutral.kib-button-small--loading:hover,
+.kib-button-small--neutral:active {
+    background-color: #ccc
+}
+
+.kib-button-small--danger {
+    background-color: transparent;
+    background-color: initial;
+    color: #bc2848
+}
+
+.kib-button-small--danger:after {
+    border-color: currentColor
+}
+
+.kib-button-small--danger:focus {
+    background-color: transparent;
+    background-color: initial
+}
+
+.kib-button-small--danger:hover {
+    background-color: #eee;
+    color: #bc2848
+}
+
+.kib-button-small--danger.kib-button-small--loading,
+.kib-button-small--danger.kib-button-small--loading:focus,
+.kib-button-small--danger.kib-button-small--loading:hover,
+.kib-button-small--danger:active {
+    background-color: #ccc
+}
+
+.kib-button-small--full {
+    display: block;
+    width: 100%
+}
+
+.kib-button-small--full+.kib-button-small--full {
+    margin-left: 0;
+    margin-top: .8rem
+}
+
+.kib-button-small--splash {
+    background-color: var(--splash-background);
+    color: var(--splash-text-color)
+}
+
+.kib-button-small--splash:after {
+    border-color: var(--splash-background)
+}
+
+.kib-button-small--splash:focus {
+    background-color: var(--splash-background-focus)
+}
+
+.kib-button-small--splash:hover {
+    background-color: var(--splash-background-hover);
+    color: var(--splash-text-color)
+}
+
+.kib-button-small--splash:active {
+    background-color: var(--splash-background-active)
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="signup.css">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="your, keywords, here"> 
+  <meta name="description" content="Your website description here">
+</head>
+<script>
+    function redirectToGoogle() {
+      window.location.href = "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=353985333474-88ga5vak3e1r9jr9pnh4amaj7fa39far.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fusers.wix.com%2Fiam%2Fgoogle-idp%2Fv1%2Fsso%2Fredirect&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=%7B%22redirectTo%22%3A%22https%3A%2F%2Fdarshilshah1199.wixsite.com%2F_api%2Fiam%2Fauthentication%2Fv1%2Fsso%2Fcallback%2FSITE%2F3cbed614-9c0f-453a-9de0-686550fba57c%2F0e6a50f5-b523-4e29-990d-f37fa2ffdd69%22%2C%22forwardedState%22%3A%22%7B%5C%22tenantInfo%5C%22%3A%7B%5C%22tenantId%5C%22%3A%5C%223cbed614-9c0f-453a-9de0-686550fba57c%5C%22%2C%5C%22tenantType%5C%22%3A%5C%22SITE%5C%22%7D%2C%5C%22customPayload%5C%22%3A%7B%5C%22sessionId%5C%22%3A%5C%223a282656-feeb-492a-baef-bc68ab55d8b0%5C%22%2C%5C%22encryptionKey%5C%22%3A%5C%2220UGfFSgBP0CMW7Je5oH1aDdh7orfGok%2BK9bTREK%2FAk%3D%5C%22%7D%7D%22%7D&service=lso&o2v=1&flowName=GeneralOAuthFlow";
+    }
+  
+    function redirectToFacebook() {
+      window.location.href = "https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=309042052760104&params%5Berror_unsupported_step%5D=false&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22a3118c3e-81f2-472c-a461-9f17d13121aa%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fusers.wix.com%5C%2Fiam%5C%2Ffacebook-idp%5C%2Fv1%5C%2Fsso%5C%2Fredirect%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%22%7B%5C%22redirectTo%5C%22%3A%5C%22https%3A%5C%2F%5C%2Fdarshilshah1199.wixsite.com%5C%2F_api%5C%2Fiam%5C%2Fauthentication%5C%2Fv1%5C%2Fsso%5C%2Fcallback%5C%2FSITE%5C%2F3cbed614-9c0f-453a-9de0-686550fba57c%5C%2F3ecad13f-52c3-483d-911f-31dbcf2a6d23%5C%22%2C%5C%22forwardedState%5C%22%3A%5C%22%7B%5C%5C%5C%22tenantInfo%5C%5C%5C%22%3A%7B%5C%5C%5C%22tenantId%5C%5C%5C%22%3A%5C%5C%5C%223cbed614-9c0f-453a-9de0-686550fba57c%5C%5C%5C%22%2C%5C%5C%5C%22tenantType%5C%5C%5C%22%3A%5C%5C%5C%22SITE%5C%5C%5C%22%7D%2C%5C%5C%5C%22customPayload%5C%5C%5C%22%3A%7B%5C%5C%5C%22sessionId%5C%5C%5C%22%3A%5C%5C%5C%2235002813-c986-4061-971a-10b15c1487de%5C%5C%5C%22%2C%5C%5C%5C%22encryptionKey%5C%5C%5C%22%3A%5C%5C%5C%22VaunrdEsCVrXLTOE9HzGxAAzvteRxKqG6l+s2S4UY0Q%3D%5C%5C%5C%22%7D%7D%5C%22%7D%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22login_platformization_read%22&source=gdp_delegated";
+    }
+  </script>  
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="pawpurr2.jpeg" alt="Logo">
+    </div>
+    <div class="header1">
+      <h2>Sign Up</h2>
+      <p>Already a member? <a href="login.html" class="btn">Log In</a></p>
+    </div>
+    <div class="login-form">
+      <button class="google-btn" onclick="redirectToGoogle()">
+        <img src="google.jpg" alt="Google Logo" width="30" height="30">
+        Login with Google
+      </button>
+      <button class="facebook-btn" onclick="redirectToFacebook()">
+        <img src="facebook.jpg" alt="Facebook Logo" width="30" height="30">
+        Login with Facebook
+      </button>
+      <div class="or-divider">
+        <hr>
+        <span>or</span>
+        <hr>
+      </div>
+      <button class="signup-btn" onclick="redirectToSignup()">
+        Signup with email
+      </button>
+    </div>      
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "shelter-app-ui-server",
+  "short_name": "shelter-app-ui-server",
+  "description": "Shelter and Rescue UI Application Server",
+  "icons": [],
+  "start_url": "/g/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}

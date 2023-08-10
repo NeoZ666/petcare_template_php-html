@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Register Form Start</title>
+    <link rel="stylesheet" href="registration1.css">
+   
+  </head>
+
+  <body>
+
+    <form class="signup-form" action="newregistration.php" method="post">
+          <!-- form header -->
+    <div class="form-header">
+        <h1>Create Account</h1>
+    </div>
+
+    <!-- form body -->
+    <div class="form-body">
+      <div class="horizontal-group">
+        <div class="form-group left">
+            <label for="name" class="label-title">Name *</label>
+            <input type="text" id="name" class="form-input" name="fname" placeholder="Enter your name" required>
+          </div>
+          <!-- Firstname and Lastname -->
+            <div class="form-group right">
+              <label for="email" class="label-title">Email ID *</label>
+              <input type="email" id="email" class="form-input"name="email" placeholder="Enter your email" required>
+            </div>
+         
+    </div>
+          
+          <script>
+            function validateForm() {
+              const phoneNumberInput = document.getElementById("phone_number");
+              const phoneNumber = phoneNumberInput.value.trim();
+          
+              // Regular expression to validate 10-digit phone number starting with 7, 8, or 9
+              const phoneNumberPattern = /^[7-9][0-9]{9}$/;
+          
+              if (!phoneNumber.match(phoneNumberPattern)) {
+                alert("Please enter a valid 10-digit phone number starting with 7, 8, or 9.");
+                phoneNumberInput.focus();
+                return false; // Prevent form submission
+              }
+          
+              // Additional validation can be added if needed
+          
+              // Form submission
+              // Your form submission code here, e.g., formElement.submit();
+            }
+          </script>
+      
+  
+  <!-- Password and confirm password -->
+
+  
+      <div class="horizontal-group">
+      <div class="form-group left">
+        <label for="password" class="label-title">Password *</label>
+        <input type="password" id="password" class="form-input"name="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group right">
+        <label for="confirm-password" class="label-title">Confirm Password *</label>
+        <input type="password" id="confirm-password" class="form-input" name="" placeholder="Enter your password again" required>
+      </div>
+    </div>
+      <div class="horizontal-group">
+        <div class="form-group right">
+            <label for="phone_number" class="label-title"> phone number</label>
+            <input
+              type="tel"
+              id="phone_number"
+              class="form-input"
+              placeholder="Enter your 10-digit phone number (starting with 7, 8, or 9)"
+              pattern="[7-9][0-9]{9}"
+              maxlength="10"
+              name="phone"
+              required
+            />
+    
+          </div>
+          <div class="form-group left" >
+            <label for="choose-file" class="label-title">Upload Profile Picture</label>
+            <input type="file" id="choose-file" size="80">
+          </div>
+          <br>
+     
+      </div>
+       <script>
+        function validateForm() {
+          const nameInput = document.getElementById("name");
+          const name = nameInput.value.trim();
+          const emailInput = document.getElementById("email");
+          const email = emailInput.value.trim();
+          const petParentServiceExpertInput = document.getElementById("pet_parent_service_expert");
+          const petParentServiceExpert = petParentServiceExpertInput.value;
+          const passwordInput = document.getElementById("password");
+          const password = passwordInput.value;
+          const confirmPasswordInput = document.getElementById("confirm-password");
+          const confirmPassword = confirmPasswordInput.value;
+      
+          // Regular expression to validate email format
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+          if (name === "") {
+            alert("Please enter your name.");
+            nameInput.focus();
+            return false; // Prevent form submission
+          }
+      
+          if (!email.match(emailPattern)) {
+            alert("Please enter a valid email address.");
+            emailInput.focus();
+            return false; // Prevent form submission
+          }
+      
+          if (petParentServiceExpert === "") {
+            alert("Please select whether you are a Pet Parent or a Service Expert.");
+            petParentServiceExpertInput.focus();
+            return false; // Prevent form submission
+          }
+      
+          if (password === "") {
+            alert("Please enter a password.");
+            passwordInput.focus();
+            return false; // Prevent form submission
+          }
+      
+          if (password !== confirmPassword) {
+            alert("Passwords do not match. Please enter the same password in both fields.");
+            confirmPasswordInput.focus();
+            return false; // Prevent form submission
+          }
+      
+          // Form submission
+          // Your form submission code here, e.g., formElement.submit();
+        }
+      </script>
+      <div class="form-group right">
+        <div class="pet">
+        <label for="pet_parent_service_expert" class="label-title">Pet Parent/Service Expert *</label>
+        <select id="pet_parent_service_expert" class="form-input" required onchange="toggleFields()">
+          <option value="">Select one</option>
+          <option value="pet_parent" name="pet">Pet Parent</option>
+          <option value="service_expert" name="pet">Service Expert</option>
+        </select>
+      </div>
+      </div>
+    
+      <!-- Additional fields for Pet Parent -->
+      <div class="form-group" id="pet_parent_details" style="display: none;">
+        <div class="horizontal-group">
+          <div class="form-group right">
+            <div class="gender">
+            <label for="pet_gender" class="label-title">Pet Gender</label>
+            <div class="input-group">
+              <label for="male">
+                <input type="radio" name="gender" value="male" id="male"> Male</label>
+              <label for="female">
+                <input type="radio" name="gender" value="female" id="female"> Female</label>
+            </div>
+            </div>
+          </div>
+          <div class="form-group left">
+            <label class="label-title">Pet Type</label>
+            <div class="petType">
+              <label for="dog">
+                <input type="radio" name="petType" value="dog" id="dog"> Dog</label>
+              <label for="cat">
+                <input type="radio" name="petType" value="cat" id="cat"> Cat</label>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="pet_name" class="label-title">Pet Name</label>
+            <input type="text" id="pet_name" class="form-input" name="petname"placeholder="Enter your pet Name">
+          </div>
+          <div class="form-group right">
+            <label for="pet_breed" class="label-title">Pet Breed</label>
+            <input type="text" id="pet_breed" name="petbreed"class="form-input" placeholder="Enter your pet Breed">
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="pet_age" class="label-title">Pet Age</label>
+            <div class="input-group">
+              <div class="form-group left">
+              <input type="number" id="pet_age" name="petyear" class="form-input" placeholder="years"></div>
+              <div class="form-group right">
+              <input type="number" id="pet_age" name="petage" class="form-input" placeholder="months"></div>
+            </div>
+          </div>
+       
+        
+        <!-- Add more fields for additional information related to service experts -->
+          <div class="form-group right">
+            <label for="pet_weight" class="label-title">Pet Weight</label>
+            <input type="text" id="pet_weight" name="weight" class="form-input" placeholder="Enter your pet weight">
+          </div>
+        </div>
+       
+       
+    <label for="pet_healthdata" class="label-title">Has your pet received all its required vaccinations, and can you provide proof of vaccination records?</label>
+    <div class="input-group">
+      <div class="que">
+      <label for="yes">
+        <input type="radio" name="que" value="yes" id="que" onclick="showUploadOption()"> Yes</label>
+      <label for="no">
+        <input type="radio" name="que" value="no" id="queno" onclick="hideUploadOption()"> No</label>
+    </div>
+    </div>
+    <br>
+    <div id="uploadOption" style="display: none;">
+      <label for="vaccination_proof" class="label-title">Upload Vaccination Proof</label>
+      <input type="file" id="vaccination_proof" class="form-input">
+    </div>
+    <br>
+  <label for="pet_healthdata1" class="label-title">Does your pet have any known medical conditions, allergies, or special dietary requirements that we should be aware of?</label>
+  <textarea id="pet_healthdata1" name="ques1"class="form-input" rows="4" placeholder="Enter any relevant information"></textarea>
+  <br>
+  <label for="pet_healthdata2" class="label-title">Is your pet currently on any medications,and if so,what are the dosages and administration instruction?</label>
+  <textarea id="pet_healthdata2" name="ques2" class="form-input" rows="4" placeholder="Enter any relevant information"></textarea>
+  <br>
+  <label for="pet_healthdata3" class="label-title">Has your pet had any recent injuries or surgeries that may require additional attention or care?</label>
+  <textarea id="pet_healthdata3" name="ques3" class="form-input" rows="4" placeholder="Enter any relevant information"></textarea>
+  <br>
+  <label for="pet_healthdata4" class="label-title">How does your pet typically react to being in a new environment or around other pets?Are there any specific behavioral traits or anxieties?</label>
+  <textarea id="pet_healthdata4" name="ques4" class="form-input" rows="4" placeholder="Enter any relevant information"></textarea>
+</div>
+
+        <!-- Add more fields for additional information related to pet parents -->
+      
+    
+      <!-- Additional fields for Service Expert -->
+      <div class="form-group" id="service_expert_details" style="display: none;">
+       
+        <label for="service_type" class="label-title">Select your service *</label>
+        <select id="service_type" class="form-input">
+          <option value="">Select one</option>
+          <option value="grooming">Grooming</option>
+          <option value="training">Training</option>
+          <option value="walking">Walking</option>
+          <!-- Add more options as needed -->
+        </select>
+        <br>
+       <br>
+          <label for="experience_years" class="label-title">What your experience</label>
+          <input type="number" name="exp" id="experience_years" class="form-input" placeholder="How many years are you professionally working as veterinarian?" required>
+        <!-- Add more fields for additional information related to service experts -->
+        <label for="service" class="label-title">Price your service</label>
+        <label for="service" class="label-title">Example</label>
+      
+    </div>
+    </div>
+    
+  <!-- Gender and Hobbies -->
+   <!-- Profile picture and Age -->
+
+    
+ 
+  
+ 
+  <!-- form footer -->
+  <div class="form-footer">
+    <button type="submit" onclick="return validateForm()">Submit</button>
+</div>
+</form>
+
+<script>
+function toggleFields() {
+    var selectedOption = document.getElementById("pet_parent_service_expert").value;
+    var petParentDetails = document.getElementById("pet_parent_details");
+    var serviceExpertDetails = document.getElementById("service_expert_details");
+
+    // Show/hide fields based on the selected option
+    if (selectedOption === "pet_parent") {
+        petParentDetails.style.display = "block";
+        serviceExpertDetails.style.display = "none";
+    } else if (selectedOption === "service_expert") {
+        petParentDetails.style.display = "none";
+        serviceExpertDetails.style.display = "block";
+    } else {
+        petParentDetails.style.display = "none";
+        serviceExpertDetails.style.display = "none";
+    }
+}
+
+// Function to be called when the page loads to set the initial visibility
+window.onload = function () {
+    toggleFields();
+}
+
+function validateForm() {
+    // Your validation checks here
+
+    return true;
+}
+</script>
+
+</body>
+
+</html>
+  

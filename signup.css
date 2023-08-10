@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FEEEE3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  /* background-color: #fff; */
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.btn {
+  text-decoration: none;
+  color: black; 
+  cursor: pointer;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header img {
+  width: 400px;
+}
+
+.header1 {
+  text-align: center;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  /* background-color: #4CAF50; */
+  /* color: #fff; */
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.or-divider hr {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.or-divider span {
+  margin: 0 10px;
+  color: #777;
+}
+
+.google-btn {
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 40px; /* Add padding on the left to accommodate the logo */
+  border: 2px solid black; /* Add a black border with a width of 2px */
+}
+
+.google-btn img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px; /* Adjust as needed to align the logo inside the button */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+  margin-top: 10px;
+  position: relative;
+  padding-left: 40px; /* Add padding on the left to accommodate the logo */
+  border: 2px solid black; /* Add a black border with a width of 2px */
+}
+
+.facebook-btn img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px; /* Adjust as needed to align the logo inside the button */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 40px; /* Add padding on the left to accommodate the logo */
+  border: 2px solid black; /* Add a black border with a width of 2px */
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.login-form p {
+  margin-top: 10px;
+}
+
+.login-form a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
